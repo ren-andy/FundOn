@@ -1,0 +1,11 @@
+{
+  "name": "starterhacks-startup-crowdsource-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Kim",
+  "license": "ISC"
+}
