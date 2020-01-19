@@ -41,7 +41,7 @@ export default function MediaCard(props) {
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
+          Add fund
         </Button>
         <Button size="small" color="primary">
           Learn More

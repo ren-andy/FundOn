@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import queryString from "query-string";
 import axios from "axios";
 import { Link } from 'react-router-dom';
+import { ActualDashBoard } from '../components/templates/ActualDashboards'
 
 class Dashboard extends Component {
   state = {
     name: null,
     goal: null,
+    userJoined: 0,
     loading: true,
   }
 
@@ -24,7 +26,9 @@ class Dashboard extends Component {
           for (const i in res.data) {
             if (res.data[i].businessName == params.name) {
               console.log({goal: res.data[i].businessGoal});
-              this.setState({ goal: res.data[i].businessGoal});
+              console.log({goal: res.data[i]})
+              console.log(this.state.userJoined)
+              this.setState({ goal: res.data[i].businessGoal, userJoined: res.data[i].userJoined});
               break;
             }
           }
@@ -39,11 +43,13 @@ class Dashboard extends Component {
     if (this.state.loading) return <div>Loading...</div>;
     return this.state.goal !== null ? (
       <div>
-        Hello, {this.state.name} , {this.state.goal}
+        <ActualDashBoard businessName={this.state.name} businessGoal={this.state.goal} />
       </div>
-    ) : <div>
-        No business.
-        <Link to="/createBusiness">Create Business</Link>
+    ) : <div className="center">
+        <br></br>
+        You haven't posted any business. Please post your business by clicking:
+        <br></br>
+        <Link to="/createBusiness">Post Business</Link>
         </div>
   }
 }

@@ -15,7 +15,8 @@ const BusinessSchema = new Schema({
         type: String
     },
     usersJoined: {
-        type: Number
+        type: Number,
+        default: 1
     },
     interest: {
         type: [String]

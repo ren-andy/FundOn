@@ -30,6 +30,7 @@ class Login extends Component {
             .post("api/user/login", user)
             .then(res => {
                 console.log(res.data.isInvalidEmail);
+                console.log(res.data.isInvalidPassword);
                 this.setState({
                     isInvalidEmail: res.data.isInvalidEmail,
                     isInvalidPassword: res.data.isInvalidPassword
