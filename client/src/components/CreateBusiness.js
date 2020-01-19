@@ -45,7 +45,7 @@ class CreateBusiness extends Component {
 
     render() {
         return (
-            <div>
+            <div className="center">
                 <h2>Post Your Business</h2>
                 <div className="row">
                     {this.errorMessage()}
