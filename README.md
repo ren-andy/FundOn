@@ -2,8 +2,8 @@
 
 StarterHacks 2020 Hack submission repository. 
 
-# Introduction and pitch demo
+## Documentation and Proof of Concept 
 
-Devpost link: [here](https://devpost.com/software/fundon-eabolz) 
+Devpost: https://devpost.com/software/fundon-eabolz
 
-
+Active Deployment: http://fundon.appspot.com
