@@ -19,8 +19,8 @@ const UserSchema = new Schema({
         type: String,
         minlength: 5
     },
-    preference: {
-        type: String
+    interest: {
+        type: [String]
     },
     token: {
         type: String
