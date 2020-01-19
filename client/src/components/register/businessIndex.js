@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Link } from 'react-router-dom'
+import logo from '../../components/images/fundOnLogo.png'
 
 class Register extends Component {
     state = {
@@ -45,6 +46,7 @@ class Register extends Component {
     render() {
         return (
             <div className="center">
+                <img className="imageCrop" src={logo}></img>
                 <h2>Business Register</h2>
                 <div className="row">
                     {this.errorMessage()}
