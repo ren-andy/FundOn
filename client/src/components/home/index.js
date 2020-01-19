@@ -38,7 +38,7 @@ class Home extends Component {
             <Box p={3} fontSize={2} width={[1, 1, 1 / 2]} bg="white"></Box>
             <Flex>
               <Card width={256}>
-                <Link href="/SignIn">
+                <Link href="/login">
                   {/* include link to login page */}
                   <Image
                     sx={{
@@ -54,7 +54,7 @@ class Home extends Component {
               </Card>
 
               <Card width={256}>
-                <Link href="/SignUp">
+                <Link href="/register">
                   {/* include link to login page */}
                   <Image
                     sx={{
@@ -65,7 +65,7 @@ class Home extends Component {
                   />
                 </Link>
                 <Heading fontSize={[5, 6, 5]} color="primary">
-                  Sign up
+                  Register
                 </Heading>
               </Card>
             </Flex>

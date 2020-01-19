@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import queryString from "query-string";
 import axios from "axios";
 import { Link } from 'react-router-dom';
-import { ActualDashBoard } from '../components/templates/ActualDashboards'
+import ActualDashBoard from './templates/ActualDashboards'
 
 class Dashboard extends Component {
   state = {
