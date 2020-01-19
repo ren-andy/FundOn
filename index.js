@@ -60,8 +60,9 @@ app.post('/api/user/login', (req, res) => {
         // find email
         if (!user) {
             return res.json({
-                loginSuccess: false,
-                message: "Auth Failed, no such email exists"
+                isInvalidPassword: false,
+                isInvalidEmail: true
+               // message: "Auth Failed, no such email exists"
             })
         }
 
@@ -69,8 +70,8 @@ app.post('/api/user/login', (req, res) => {
         user.comparePassword(req.body.password, (err, isMatch) => {
             if (!isMatch) {
                 return res.json({
-                    loginSuccess: false,
-                    message: "Auth Failed, wrong password"
+                    isInvalidPassword: true,
+                    isInvalidEmail: false
                 })
             }
         })
@@ -80,7 +81,8 @@ app.post('/api/user/login', (req, res) => {
             res.cookie("x_auth", user.token)
                 .status(200)
                 .json({
-                    loginSuccess: true
+                    isInvalidPassword: false,
+                    isInvalidEmail: false
                 })
         })
     })
