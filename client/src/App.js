@@ -10,14 +10,8 @@ import BusinessLogin from "./components/login/businessIndex";
 import Dashboard from "./components/Dashboard";
 import BusinessDashboard from "./components/business/businessIndex";
 import CreateBusiness from "./components/CreateBusiness";
-import Navbar from "./components/Navbar";
-import { Flex, Text, Box, Link, Heading, Card, Image, Button } from "rebass";
 import { ThemeProvider } from "emotion-theming";
 import theme from "@rebass/preset";
-import Typist from "react-typist";
-import signup_img from "./signup.png";
-import login from "./login.png";
-import logo from "./logo.png";
 import "./App.css";
 
 

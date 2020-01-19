@@ -3,9 +3,9 @@ import { Flex, Text, Box, Link, Heading, Card, Image, Button } from "rebass";
 import { ThemeProvider } from "emotion-theming";
 import theme from "@rebass/preset";
 import Typist from "react-typist";
-import signup_img from "../../signup.png";
-import login from "../../login.png";
-import logo from "../../logo.png";
+import register from "../images/signup.png";
+import login from "../images/login.png";
+import logo from "../images/logo.png";
 import "../../App.css";
 
 class Home extends Component {
@@ -61,7 +61,7 @@ class Home extends Component {
                       width: ["100%", "60%"],
                       borderRadius: 8
                     }}
-                    src={signup_img}
+                    src={register}
                   />
                 </Link>
                 <Heading fontSize={[5, 6, 5]} color="primary">
