@@ -34,6 +34,15 @@ class Login extends Component {
                     isInvalidEmail: res.data.isInvalidEmail,
                     isInvalidPassword: res.data.isInvalidPassword
                 })
+                console.log(res.data)
+                if (res.data.isInvalidEmail == false && res.data.isInvalidPassword == false) {
+                    this.props.history.push({
+                        pathname: "/dashboard",
+                        search: `?name=${encodeURIComponent(this.state.name)}`,
+                    });
+                }
+
+
             })
             .catch(err => console.error(err));
 
@@ -42,13 +51,7 @@ class Login extends Component {
     errorMessage = () => {
         if (this.state.isInvalidEmail) { return <p>This business does not exist!</p> }
         else if (this.state.isInvalidPassword) { return <p>Wrong Password!</p> }
-        else if (this.state.isInvalidEmail == null && this.state.isInvalidEmail == null) { return <p></p> }
-        else { 
-            this.props.history.push({
-                pathname: "/dashboard",
-                search: `?name=${encodeURIComponent(this.state.name)}`,
-            });
-         }
+        else if(this.state.isInvalidEmail == null && this.state.isInvalidEmail == null) { return <p></p> }
     }
 
 

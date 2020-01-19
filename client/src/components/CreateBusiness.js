@@ -45,8 +45,8 @@ class CreateBusiness extends Component {
 
     render() {
         return (
-            <div>
-                <h2>Create Business</h2>
+            <div className="center">
+                <h2>Post Your Business</h2>
                 <div className="row">
                     {this.errorMessage()}
                     <form className="col s12" onSubmit={this.handleSubmit}>
@@ -56,13 +56,13 @@ class CreateBusiness extends Component {
                         </div>
                         <div className="form-group">
                             <label>Business Goal:</label>
-                            <input aria-required="true" className="validate" placeholder="Enter email" id="businessGoal" value={this.state.businessGoal} onChange={this.handleChange} />
+                            <input aria-required="true" className="validate" placeholder="Enter goal" id="businessGoal" value={this.state.businessGoal} onChange={this.handleChange} />
                         </div>
                         <div className="form-group">
                             <label>Business Logo:</label>
                             <input aria-required="true" className="validate" placeholder="Paste logo" id="businessLogo" value={this.state.businessLogo} onChange={this.handleChange} />
                         </div>
-                        <button type="submit" className="btn btn-primary" onClick={this.handleSubmit}>Create</button>
+                        <button type="submit" className="btn btn-primary" onClick={this.handleSubmit}>Post</button>
                     </form>
                 </div>
             </div>
