@@ -3,8 +3,8 @@ import { Flex, Text, Box, Link, Heading, Card, Image, Button } from "rebass";
 import { ThemeProvider } from "emotion-theming";
 import theme from "@rebass/preset";
 import Typist from "react-typist";
-import register from "../images/signup.png";
-import login from "../images/login.png";
+import student from "../images/student.png";
+import business from "../images/business.png";
 import logo from "../images/logo.png";
 import "../../App.css";
 
@@ -42,39 +42,40 @@ class Home extends Component {
               </Typist>
             </Text>
             <Box p={3} fontSize={2} width={[1, 1, 1 / 2]} bg="white"></Box>
-            <Flex>
-              <Card width={256}>
-                <Link href="/login">
-                  {/* include link to login page */}
-                  <Image
-                    sx={{
-                      width: ["100%", "45%"],
-                      borderRadius: 8
-                    }}
-                    src={login}
-                  />
-                </Link>
-                <Heading fontSize={[5, 6, 5]} color="primary">
-                  Login
-                </Heading>
-              </Card>
+            <Box p={3} fontSize={2} width={[1, 1, 1 / 2]} bg="white"></Box>
+          <Flex>
+            <Card width={256}>
+              <Link href="/login">
+                {/* include link to login page */}
+                <Image
+                  sx={{
+                    width: ["100%", "50%"],
+                    borderRadius: 8
+                  }}
+                  src={student}
+                />
+              </Link>
+              <Heading fontSize={[5, 6, 5]} color="primary">
+                Student
+              </Heading>
+            </Card>
 
-              <Card width={256}>
-                <Link href="/register">
-                  {/* include link to login page */}
-                  <Image
-                    sx={{
-                      width: ["100%", "60%"],
-                      borderRadius: 8
-                    }}
-                    src={register}
-                  />
-                </Link>
-                <Heading fontSize={[5, 6, 5]} color="primary">
-                  Register
-                </Heading>
-              </Card>
-            </Flex>
+            <Card width={256}>
+              <Link href="/businessLogin">
+                {/* include link to login page */}
+                <Image
+                  sx={{
+                    width: ["100%", "45%"],
+                    borderRadius: 8
+                  }}
+                  src={business}
+                />
+              </Link>
+              <Heading fontSize={[5, 6, 5]} color="primary">
+                Business
+              </Heading>
+            </Card>
+          </Flex>
           </div>
           <p align="center">Copyright © 2020 FundOn </p>
         </div>

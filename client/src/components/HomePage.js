@@ -1,12 +1,12 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
+import React, { Component }from "react";
 import { Flex, Text, Box, Link, Heading, Card, Image, Button } from "rebass";
 import { ThemeProvider } from "emotion-theming";
 import theme from "@rebass/preset";
 import Typist from "react-typist";
-import signup_img from "../signup.png";
-import login from '../login.png'
-import logo from "../logo.png";
+import student from "./images/student.png";
+import business from "./images/business.png";
+import logo from "./images/logo.png";
+//import "../App.css";
 
 export default function HomePage(prop) {
   return (
@@ -44,7 +44,7 @@ export default function HomePage(prop) {
                     width: ["100%", "45%"],
                     borderRadius: 8
                   }}
-                  src={login}
+                  src={student}
                 />
               </Link>
               <Heading fontSize={[5, 6, 5]} color="primary">
@@ -60,7 +60,7 @@ export default function HomePage(prop) {
                     width: ["100%", "60%"],
                     borderRadius: 8
                   }}
-                  src={signup_img}
+                  src={business}
                 />
               </Link>
               <Heading fontSize={[5, 6, 5]} color="primary">

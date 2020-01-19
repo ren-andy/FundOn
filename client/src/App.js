@@ -16,6 +16,7 @@ import { ThemeProvider } from "emotion-theming";
 import theme from "@rebass/preset";
 import "./App.css";
 import HomePage from './components/HomePage';
+import Home from './components/home/index';
 // import Business from './components/business/index'
 // import Home from './components/home/index'
 
@@ -24,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/" component={HomePage}>
+        <Route exact path="/" component={Home}>
         </Route>
         <Route path="/business" component={Business}>
         </Route>
