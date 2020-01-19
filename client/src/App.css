@@ -1,0 +1,9 @@
+.card-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.center {
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}

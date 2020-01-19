@@ -2,14 +2,17 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const BusinessSchema = new Schema({
-    name: {
+    businessName: {
         type: String,
         required: true,
         maxlength: 50
     },
-    goal: {
+    businessGoal: {
         type: String,
         minlength: 5
+    },
+    businessLogo: {
+        type: String
     },
     usersJoined: {
         type: Number
