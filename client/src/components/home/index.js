@@ -22,7 +22,13 @@ class Home extends Component {
               }}
             />
             <Box mx="auto" />
-            <Link variant="nav" href="/SignIn">
+            <Link variend="nav" href="https://devpost.com/software/fundon-eabolz">
+              <Text fontSize={[3, 2, 3]} fontWeight="bold">
+                Devpost
+              </Text>
+            </Link>
+            <Box mx={2}/>
+            <Link variant="nav" href="/login">
               <Text fontSize={[3, 2, 3]} fontWeight="bold">
                 Sign in
               </Text>
@@ -70,7 +76,7 @@ class Home extends Component {
               </Card>
             </Flex>
           </div>
-          <p align="center">Copyright © 2020 FundOn</p>
+          <p align="center">Copyright © 2020 FundOn </p>
         </div>
       </ThemeProvider>
     );
