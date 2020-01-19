@@ -1,3 +1,2 @@
-=== FundOn Frontend ===
-
+# FundOn Frontend
 Powered by React. 
