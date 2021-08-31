@@ -15,3 +15,5 @@ Active Deployment: http://fundon.appspot.com
 `npm run dev` to instantiate an app instance. 
 
 `npm run deploy` to deploy to google cloud.
+
+***THIS IS DEPRECATED. PLEASE CHECK https://github.com/davidjuhyung/FundOn***
